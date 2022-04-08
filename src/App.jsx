@@ -66,6 +66,7 @@ function App() {
 		}
 
 		setAnimarModal(false);
+		setFiltro('');
 		setTimeout(() => {
 			setModal(false);
 		}, 500);
