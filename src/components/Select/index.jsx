@@ -13,9 +13,9 @@ const Select = ({ name, id, value, onChange }) => {
 			<option value='economy'>Economy</option>
 			<option value='food'>Food</option>
 			<option value='home'>Home</option>
-			<option value='other-expenses'>Other expenses</option>
+			<option value='otherExpenses'>Other expenses</option>
 			<option value='entertainment'>Entertainment</option>
-			<option value='Health'>Health</option>
+			<option value='health'>Health</option>
 			<option value='subscriptions'>Subscriptions</option>
 		</select>
 	);

@@ -12,6 +12,7 @@ const AppProvider = ({ children }) => {
 
 	const addExpense = (expense) => {
 		expense.id = idGenerator();
+		expense.date = Date.now();
 		setExpenses((prevState) => [...prevState, expense]);
 		setTimeout(() => {
 			setAnimated(!animated);
@@ -23,7 +24,18 @@ const AppProvider = ({ children }) => {
 
 	return (
 		<AppContext.Provider
-			value={{ budget, setBudget, validBudget, setValidBudget, modal, setModal, animated, setAnimated, addExpense }}
+			value={{
+				budget,
+				setBudget,
+				validBudget,
+				setValidBudget,
+				modal,
+				setModal,
+				animated,
+				setAnimated,
+				addExpense,
+				expenses,
+			}}
 		>
 			{children}
 		</AppContext.Provider>
